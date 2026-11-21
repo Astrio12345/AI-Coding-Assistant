@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Code Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>💻 AI Code Assistant</h1>
+      <p>Powered by Qwen 2.5 Coder 3B (local)</p>
+      <div class="toolbar">
+        <label>Language
+          <select id="language">
+            <option>Any language</option>
+            <option>Python</option>
+            <option>JavaScript</option>
+            <option>TypeScript</option>
+            <option>Java</option>
+            <option>C++</option>
+            <option>C#</option>
+            <option>Go</option>
+            <option>Rust</option>
+            <option>SQL</option>
+          </select>
+        </label>
+        <button id="clear" type="button">🗑 New chat</button>
+      </div>
+    </header>
+    <section id="chat" class="chat">
+      <div class="msg bot">Hi! Ask me anything about code.</div>
+    </section>
+    <form id="form" class="input-bar">
+      <input id="input" type="text" placeholder="e.g. How do I reverse a list?" autocomplete="off" required>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
